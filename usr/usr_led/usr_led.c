@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-int main(){
+int usr_led(void){
 	int fd;
 	char *hello_node = "/dev/hello";
 	
