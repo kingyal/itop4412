@@ -38,12 +38,12 @@ static long hello_unlocked_ioctl(struct file *File, unsigned int cmd, unsigned l
 	
 	if(cmd > 1){
 		printk(KERN_EMERG "cmd = 0 or cmd = 1\n");
-		return ;
+		return 1;
 	}
 	
 	if(arg > 1){
 		printk(KERN_EMERG "arg = 1\n");
-		return ;
+		return 1;
 	}
 	
 	gpio_set_value(EXYNOS4_GPL2(0),cmd);

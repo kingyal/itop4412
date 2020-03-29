@@ -12,11 +12,7 @@ int even_parity(int value, int n_bits)
 	}
 
 	return (parity%2) == 0;
-
 }
-
-
-
 
 
 
