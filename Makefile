@@ -28,5 +28,4 @@ drv_ko_clean:
 	make -C $(DRV_DIR)/ clean -j1
 
 copy_to_share_clean:
-	rm -rf $(OUT_DIR)/*
 	rm -rf /home/share/*
