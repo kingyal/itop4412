@@ -7,7 +7,7 @@
 
 int usr_led(void){
 	int fd;
-	char *hello_node = "/dev/hello";
+	char *hello_node = "/dev/hello_ky";
 	
 /*O_RDWR???¨¢¡ä¨°?a,O_NDELAY¡¤?¡Á¨¨¨¨?¡¤?¨º?*/	
 	if((fd = open(hello_node,O_RDWR|O_NDELAY))<0){

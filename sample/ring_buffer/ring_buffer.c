@@ -1,3 +1,4 @@
+#if 0
 这是一个循环buffer的读写方式，构建方式值得学习：
 
 1. circle buffer的初始化：
@@ -132,3 +133,4 @@ HI_U32 circ_buf_write(circ_buf *pst_cb, HI_U8 *p_dest, HI_U32 len, HI_BOOL b_dat
 }
 
 这里的取巧之处就是构建了一个循环buffer，考虑到读写指针的先后顺序不一样，值得细细研读。
+#endif

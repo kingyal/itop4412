@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "common.h"
+#include "usr_led.h"
 
 int main()
 {
@@ -14,6 +15,10 @@ int main()
 	HI_LOG_INFO("d = %d", d);
 
 	HI_LOG_DEBUG("e = %d", e);
+
+	//usr_led();
+
+	usr_test();
 
 	return 0;
 }

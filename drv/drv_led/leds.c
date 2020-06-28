@@ -1,3 +1,9 @@
+/*Description:注册设备，再注册杂项设备的设备节点
+ *Author:ky
+ *Date:2020-06-24
+ *History:2020-06-24  1st
+ */
+ 
 #include <linux/init.h>
 #include <linux/module.h>
 
@@ -17,7 +23,7 @@
 #include <mach/gpio-exynos4.h> 
 
 #define DRIVER_NAME "hello"
-#define DEVICE_NAME "hello"
+#define DEVICE_NAME "hello_ky"
 
 MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("ky");
