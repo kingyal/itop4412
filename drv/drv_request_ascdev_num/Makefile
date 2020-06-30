@@ -4,7 +4,7 @@ include /home/topeet/Desktop/itop4412/TOP_CONFIG.cfg
 
 #通知编译器我们要编译模块的哪些源码
 #这里是编译itop4412_hello.c这个文件编译成中间文件itop4412_hello.o
-obj-m += leds.o
+obj-m += request_ascdev_num.o
 
 #源码目录变量，这里用户需要根据实际情况选择路径
 #作者是将Linux的源码拷贝到目录/home/topeet/android4.0下并解压的
@@ -19,11 +19,11 @@ PWD := $(shell pwd)
 #$(PWD)当前目录变量
 #modules要执行的操作
 
-leds_ko:	
+request_ascdev_num_ko:	
 	make -C $(KDIR) M=$(PWD) modules
 	mv *.ko $(OUT_DIR)
 		
 #make clean执行的操作是删除后缀为o的文件
-leds_clean:
+request_ascdev_num_clean:
 	rm -rf *.o *.mod.c *.order *.mod.o *.symvers *.ko
 	rm -rf $(OUT_DIR)/*.ko
