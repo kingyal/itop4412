@@ -9,7 +9,8 @@ INC_DIR :=  -I$(SAMPLE_DIR)/common/include/			\
 			-I$(SAMPLE_DIR)/usr_led/include/		\
 			-I$(SAMPLE_DIR)/usr_test/include/		\
 			-I$(SAMPLE_DIR)/usr_cnode_fops/include/		\
-			-I$(SAMPLE_DIR)/usr_chr_driver_leds/include/		\
+			-I$(SAMPLE_DIR)/usr_chr_driver_leds/include/ \
+			-I$(SAMPLE_DIR)/usr_io_test/include/ \
 			-I$(SAMPLE_DIR)/ring_buffer/include/
 
 SRCFILE := $(wildcard $(SAMPLE_DIR)/main.c)
@@ -18,6 +19,7 @@ SRCFILE += $(wildcard $(SAMPLE_DIR)/usr_led/*.c)
 SRCFILE += $(wildcard $(SAMPLE_DIR)/usr_test/*.c)
 SRCFILE += $(wildcard $(SAMPLE_DIR)/usr_cnode_fops/*.c)
 SRCFILE += $(wildcard $(SAMPLE_DIR)/usr_chr_driver_leds/*.c)
+SRCFILE += $(wildcard $(SAMPLE_DIR)/usr_io_test/*.c)
 SRCFILE += $(wildcard $(SAMPLE_DIR)/ring_buffer/*.c)
 
 all:
